@@ -5,11 +5,11 @@ The quality of product listing is crucial for improving search relevance and gai
 ## INTRODUCTION
 To build a model to automatically predict the quality of set of product listing. I used a keras tensorflow model to learn the train data from it’s behaviour with the help of the following features;
 
-● name (Name of the product)
-● description (Description about the product)
-● lvl1, lvl2 and lvl3 (Are the branches of categorization of each product)
-● price (Price of the products)
-● type (International or a Local product)
+- name (Name of the product)
+- description (Description about the product)
+- lvl1, lvl2 and lvl3 (Are the branches of categorization of each product)
+- price (Price of the products)
+- type (International or a Local product)
 
 ## PROBLEM STATEMENT
 “​On E-commerce sites, the quality of product listing is crucial for improving search relevance and gaining customer attention. In this competition, you are provided a set of product names, description, and attributes, as well as the quality score of their listing as rated by real customers.​"
@@ -29,7 +29,7 @@ df_test.replace(regex​=​{​'<.*?>|&nbsp|\W'​: ​' '​}, inplace​=​T
 1. Successful models used are as follows:
     a. Feature Engineering and classification with parallel logistic regression with GridCV to search for best scores.To do a           linear regression we are trying to do minimize​ ‖Xβ−y‖2 
     The derivative is ;
-    # 2XT (Xβ−y)
+    ### 2XT (Xβ−y)
 In small data settings, we can set the derivative to 00 and solve it directly. (e.g., QR decomposition in R.) In big data settings, the data matrix XX is too big to be stored in memory, and may be hard to solve directly. (I am not familiar with how to do QR decomposition or Cholesky decomposition for huge matrices).
 
 One way to parallelize this is by trying to use an iterative method: stochastic gradient descent, where we can approximate the gradient using a subset of the data. (If we use XsXs, ysys to represent a subset of the data,
@@ -45,3 +45,11 @@ In addition, for the R2 statistic, we can compute R2 for all data in parallel or
 
 3. Possible causes for my success/failure
     a. I had devoted most of my time reading the documentations which actually helped in the long term. Although I was unsuccessful to reflect my research study in this final project.
+
+
+### Intallation Pre-requites: 
+
+- Python 2.7.x or Python 3.x.x
+- Jupyter Notebook
+- Tensorflow
+- Processor minimum Quad-core i5
